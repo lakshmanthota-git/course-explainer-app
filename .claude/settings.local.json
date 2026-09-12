@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_close",
+      "Bash(python -m unittest:*)",
+      "Bash(set PYTHONPATH=%CD%src:*)",
+      "Bash(python:*)",
+      "Bash(timeout /t 3 /nobreak)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_click",
+      "mcp__myDemoMcp__add",
+      "Skill(update-config)",
+      "Bash(pwsh:*)",
+      "PowerShell(& .\\\\venv\\\\Scripts\\\\python.exe --version; & .\\\\venv\\\\Scripts\\\\python.exe -c \"import sys; print\\(sys.prefix\\)\")",
+      "PowerShell(& .\\\\venv\\\\Scripts\\\\python.exe -m unittest discover -s tests -v; Write-Output \"exit=$LASTEXITCODE\")"
+    ],
+    "deny": [],
+    "ask": []
+  },
+  "enabledPlugins": {
+    "code-review@claude-plugins-official": true
+  }
+}
